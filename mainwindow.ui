@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1800</width>
+    <height>1200</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow {
+background:rgb(255, 255, 255); }</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCirculo">
+    <property name="title">
+     <string>Circulo</string>
+    </property>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuCirculo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExit"/>
+   <addaction name="actionEdit"/>
+   <addaction name="actionColor"/>
+   <addaction name="actionGrid"/>
+   <addaction name="actionAxis"/>
+  </widget>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/exit.png</normaloff>:/res/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/edit.png</normaloff>:/res/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>edit</string>
+   </property>
+   <property name="toolTip">
+    <string>Edita la ecuacion</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/colorwheel.png</normaloff>:/res/colorwheel.png</iconset>
+   </property>
+   <property name="text">
+    <string>color</string>
+   </property>
+   <property name="toolTip">
+    <string>Editar el color del circulo</string>
+   </property>
+  </action>
+  <action name="actionGrid">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/grid.png</normaloff>:/res/grid.png</iconset>
+   </property>
+   <property name="text">
+    <string>grid</string>
+   </property>
+   <property name="toolTip">
+    <string>Muestra o esconde la cuadricula</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAxis">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/axis.jpeg</normaloff>:/res/axis.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Axis</string>
+   </property>
+   <property name="toolTip">
+    <string>Ocultar o mostrar los ejes</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
